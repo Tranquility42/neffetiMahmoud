@@ -1,2 +1,3 @@
-<app-stat [uneStat]="statistiqueLoire"> </app-stat>
-<app-stat [uneStat]="statistiqueRhone"> </app-stat>
+<!-- <app-stat [uneStat]="statistiqueLoire"> </app-stat>
+<app-stat [uneStat]="statistiqueRhone"> </app-stat> -->
+<app-stat *ngFor="let uneStat of statTab" [uneStat]="uneStat"></app-stat>
